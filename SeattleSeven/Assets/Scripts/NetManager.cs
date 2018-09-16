@@ -62,10 +62,12 @@ public class NetManager : MonoBehaviour {
         PhotonNetwork.Instantiate(this.sophiaHandL.name, initializationPosition, initializationRotation, 0);
 
         //randomly spawn swords around the player
+        int i = 0;
         foreach (GameObject swordLikeThing in this.swordLikeThings)
         {
-            print("hi");
-            initializationPosition = new Vector3(Random.Range(0, 1), 0, Random.Range(0, 1)); //picks a random spot on the floor near the player.
+            //initializationPosition = new Vector3(Random.Range(0, 1), 4, Random.Range(0, 1)); //picks a random spot on the floor near the player.
+            initializationPosition = new Vector3(-1 + i * 2, 1, 1);
+            i++;
             PhotonNetwork.Instantiate(swordLikeThing.name, initializationPosition, initializationRotation   , 0);
         }
 
