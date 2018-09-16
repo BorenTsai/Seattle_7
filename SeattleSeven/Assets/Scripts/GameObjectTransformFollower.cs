@@ -2,28 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameObjectTransformFollower : MonoBehaviour {
+public class GameObjectTransformFollower : Photon.MonoBehaviour {
     public GameObject objectToTrack; 
     private float speedPosition;
     private float speedRotation;
-    public bool isMine = true; //only the owner of the avatar can make it move, not the networked users. 
 
 	// Use this for initialization
 	void Start () {
-        if (!isMine)
+
+        if (!photonView.isMine)
         {
             return;
         }
 
-        if (this.name == "Head")
+        //using StartsWith here is potentially dangerous. 
+        if (this.name.StartsWith("Head"))
         {
             objectToTrack = GameObject.Find("CenterEyeAnchor");
         }
-        else if (this.name == "LeftHand")
+        else if (this.name.StartsWith("LeftHand"))
         {
             objectToTrack = GameObject.Find("LeftHandAnchor");
         }
-        else if (this.name == "RightHand")
+        else if (this.name.StartsWith("RightHand"))
         {
             objectToTrack = GameObject.Find("RightHandAnchor");
         }
@@ -34,7 +35,7 @@ public class GameObjectTransformFollower : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (isMine || !PhotonNetwork.connected ) { //the second condition is just to make debugging easier
+        if (photonView.isMine || !PhotonNetwork.connected ) { //the second condition is just to make debugging easier
             //smoothly follow target 
             Transform target = objectToTrack.transform;
             transform.position = Vector3.Lerp(transform.position, target.position, speedPosition * Time.deltaTime);

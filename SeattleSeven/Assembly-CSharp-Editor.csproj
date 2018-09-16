@@ -104,19 +104,19 @@
     <Compile Include="Assets\Photon Unity Networking\UtilityScripts\PhotonPlayer\Editor\PunTeamsInspector.cs" />
     <None Include="Assets\Oculus\VR\Editor\AndroidManifest.OVRSubmission.xml" />
     <Reference Include="Assembly-UnityScript">
-      <HintPath>C:/Users/ssmba/Desktop/SeattleSeven/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+      <HintPath>C:/Users/ssmba/Desktop/SeattleHackathon/Git/SeattleSeven/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/ssmba/Desktop/SeattleSeven/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/ssmba/Desktop/SeattleHackathon/Git/SeattleSeven/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/ssmba/Desktop/SeattleSeven/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/ssmba/Desktop/SeattleHackathon/Git/SeattleSeven/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/ssmba/Desktop/SeattleSeven/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/ssmba/Desktop/SeattleHackathon/Git/SeattleSeven/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/ssmba/Desktop/SeattleSeven/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/ssmba/Desktop/SeattleHackathon/Git/SeattleSeven/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -358,6 +358,15 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.6f1/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:/Users/ssmba/Desktop/SeattleHackathon/Git/SeattleSeven/Assets/Photon Unity Networking/Editor/PhotonNetwork/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon3Unity3D">
+      <HintPath>C:/Users/ssmba/Desktop/SeattleHackathon/Git/SeattleSeven/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>C:/Users/ssmba/Desktop/SeattleHackathon/Git/SeattleSeven/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>C:/Users/ssmba/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
@@ -375,15 +384,6 @@
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
-    </Reference>
-    <Reference Include="Photon3Unity3D">
-      <HintPath>C:/Users/ssmba/Desktop/SeattleSeven/Assets/Plugins/Photon3Unity3D.dll</HintPath>
-    </Reference>
-    <Reference Include="websocket-sharp">
-      <HintPath>C:/Users/ssmba/Desktop/SeattleSeven/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>C:/Users/ssmba/Desktop/SeattleSeven/Assets/Photon Unity Networking/Editor/PhotonNetwork/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.6f1/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/mscorlib.dll</HintPath>

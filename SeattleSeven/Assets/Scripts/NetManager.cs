@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class NetManager : MonoBehaviour {
 
+
     public byte Version = 1;
 
-    public GameObject sophiaPrefab;
+    public GameObject sophiaHead;
+    public GameObject sophiaHandL;
+    public GameObject sophiaHandR;
 
+    public GameObject[] swordLikeThings; 
 
     public virtual void Start()
     {
@@ -53,6 +57,16 @@ public class NetManager : MonoBehaviour {
         // we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
         Vector3 initializationPositon = Vector3.zero;
         Quaternion initializationRotation = Quaternion.identity;
-        PhotonNetwork.Instantiate(this.sophiaPrefab.name, initializationPositon, initializationRotation, 0);
+        PhotonNetwork.Instantiate(this.sophiaHead.name, initializationPositon, initializationRotation, 0);
+        PhotonNetwork.Instantiate(this.sophiaHandR.name, initializationPositon, initializationRotation, 0);
+        PhotonNetwork.Instantiate(this.sophiaHandL.name, initializationPositon, initializationRotation, 0);
+
+        //randomly spawn swords around the player
+        foreach (GameObject swordLikeThing in this.swordLikeThings)
+        {
+            print("hi");
+            //PhotonNetwork.Instantiate(swordLikeThing.name, )
+        }
+
     }
 }
