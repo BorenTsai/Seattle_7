@@ -11,19 +11,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: LiberationSerif-Regular SDF
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: 898171488
   material: {fileID: 21967605876420464}
-  materialHashCode: 0
+  materialHashCode: -1642345749
   fontAssetType: 1
   m_fontInfo:
     Name: Liberation Serif
     PointSize: 54
-    Scale: 0
+    Scale: 1
     CharacterCount: 99
     LineHeight: 62.125
     Baseline: 0
     Ascender: 48.125
-    CapHeight: 0
+    CapHeight: 35.374996
     Descender: -11.6875
     CenterLine: 0
     SuperscriptOffset: 48.125
@@ -33,7 +33,7 @@ MonoBehaviour:
     UnderlineThickness: 2.6367188
     strikethrough: 13.25
     strikethroughThickness: 2.6367188
-    TabWidth: 0
+    TabWidth: 135
     Padding: 10
     AtlasWidth: 512
     AtlasHeight: 512
@@ -42,10 +42,10 @@ MonoBehaviour:
   - id: 32
     x: 11
     y: 522
-    width: 0
-    height: 0
+    width: 13.5
+    height: 59.8125
     xOffset: 0
-    yOffset: 0
+    yOffset: 48.125
     xAdvance: 13.5
     scale: 1
   - id: 33
@@ -1057,9 +1057,9 @@ Material:
     - _OutlineWidth: 0
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
-    - _ScaleRatioA: 1
-    - _ScaleRatioB: 1
-    - _ScaleRatioC: 1
+    - _ScaleRatioA: 0.90909094
+    - _ScaleRatioB: 0.7386364
+    - _ScaleRatioC: 0.7386364
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
