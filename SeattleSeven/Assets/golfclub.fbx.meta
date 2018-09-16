@@ -1,14 +1,25 @@
 fileFormatVersion: 2
 guid: cf269e3ec9e5a4d24a99f625ff35c47b
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Cylinder
+    100004: Cylinder.001
     400000: //RootNode
+    400002: Cylinder
+    400004: Cylinder.001
     2100000: No Name
+    2100002: Material.001
+    2100004: Material.002
     2300000: //RootNode
+    2300002: Cylinder
+    2300004: Cylinder.001
     3300000: //RootNode
+    3300002: Cylinder
+    3300004: Cylinder.001
     4300000: Cylinder
+    4300002: Cylinder.001
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -60,6 +71,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
