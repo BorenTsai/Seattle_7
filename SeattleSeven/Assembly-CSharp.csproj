@@ -61,8 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Attack.cs" />
-    <Compile Include="Assets\EnemyManager.cs" />
+    <Compile Include="Assets\Damage.cs" />
     <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AmbienceEmitter.cs" />
@@ -438,12 +437,16 @@
     <Compile Include="Assets\PhotonChatApi\ChatState.cs" />
     <Compile Include="Assets\PhotonChatApi\ChatUserStatus.cs" />
     <Compile Include="Assets\PhotonChatApi\IChatClientListener.cs" />
+    <Compile Include="Assets\Scripts\Attack.cs" />
     <Compile Include="Assets\Scripts\BatCapsule.cs" />
     <Compile Include="Assets\Scripts\BatCapsuleFollower.cs" />
+    <Compile Include="Assets\Scripts\EnemyManager.cs" />
     <Compile Include="Assets\Scripts\GameObjectTransformFollower.cs" />
     <Compile Include="Assets\Scripts\LaunchArcRenderer.cs" />
     <Compile Include="Assets\Scripts\NetManager.cs" />
     <Compile Include="Assets\Scripts\VelocityDebugger.cs" />
+    <Compile Include="Assets\Scripts\weapon.cs" />
+    <Compile Include="Assets\Scripts\weaponManager.cs" />
     <None Include="Assets\Oculus\Avatar\Content\Materials\AvatarMaterialStateShader.cginc" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_PC_SingleComponent.shader" />
     <None Include="Assets\Oculus\VR\Resources\OVRMRUnlitTransparent.shader" />

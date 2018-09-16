@@ -12,13 +12,25 @@ public class EnemyManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("b"))
         {
             //float randomX = Random.Range(-10.0f, 10.0f);
             //float randomZ = Random.Range(-10.0f, 10.0f);
             Attack(0, new Vector3(2.0f, 10.0f, 20.0f), Random.Range(3.0f, 7.0f));
         }
-	}
+        if (Input.GetKeyDown("g"))
+        {
+            //float randomX = Random.Range(-10.0f, 10.0f);
+            //float randomZ = Random.Range(-10.0f, 10.0f);
+            Attack(1, new Vector3(2.0f, 10.0f, 20.0f), Random.Range(3.0f, 7.0f));
+        }
+        if (Input.GetKeyDown("r"))
+        {
+            //float randomX = Random.Range(-10.0f, 10.0f);
+            //float randomZ = Random.Range(-10.0f, 10.0f);
+            Attack(2, new Vector3(2.0f, 10.0f, 20.0f), Random.Range(3.0f, 7.0f));
+        }
+    }
 
     void Attack(int enemyNo, Vector3 spawnPosition, float speed)
     {
