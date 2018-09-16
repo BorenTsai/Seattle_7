@@ -55,17 +55,18 @@ public class NetManager : MonoBehaviour {
         Debug.Log("OnJoinedRoom() called by PUN. Now this client is in a room. From here on, your game would be running. For reference, all callbacks are listed in enum: PhotonNetworkingMessage");
         Debug.Log("We are inow nstantiating the VR character onto the network");
         // we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
-        Vector3 initializationPositon = Vector3.zero;
+        Vector3 initializationPosition = Vector3.zero;
         Quaternion initializationRotation = Quaternion.identity;
-        PhotonNetwork.Instantiate(this.sophiaHead.name, initializationPositon, initializationRotation, 0);
-        PhotonNetwork.Instantiate(this.sophiaHandR.name, initializationPositon, initializationRotation, 0);
-        PhotonNetwork.Instantiate(this.sophiaHandL.name, initializationPositon, initializationRotation, 0);
+        PhotonNetwork.Instantiate(this.sophiaHead.name, initializationPosition, initializationRotation, 0);
+        PhotonNetwork.Instantiate(this.sophiaHandR.name, initializationPosition, initializationRotation, 0);
+        PhotonNetwork.Instantiate(this.sophiaHandL.name, initializationPosition, initializationRotation, 0);
 
         //randomly spawn swords around the player
         foreach (GameObject swordLikeThing in this.swordLikeThings)
         {
             print("hi");
-            //PhotonNetwork.Instantiate(swordLikeThing.name, )
+            initializationPosition = new Vector3(Random.Range(0, 1), 0, Random.Range(0, 1)); //picks a random spot on the floor near the player.
+            PhotonNetwork.Instantiate(swordLikeThing.name, initializationPosition, initializationRotation   , 0);
         }
 
     }
