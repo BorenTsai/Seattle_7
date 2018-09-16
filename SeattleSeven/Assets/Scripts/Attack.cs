@@ -11,6 +11,7 @@ public class Attack : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        this.transform.position = Vector3.MoveTowards(this.transform.position, Vector3.zero, speed * Time.deltaTime);
+        Vector3 targetPos = new Vector3(0, 1.4f, 0); 
+        this.transform.position = Vector3.MoveTowards(this.transform.position, targetPos, speed * Time.deltaTime);
 	}
 }

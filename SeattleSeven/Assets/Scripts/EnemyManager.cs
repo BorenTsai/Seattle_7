@@ -34,8 +34,12 @@ public class EnemyManager : MonoBehaviour {
 
     void Attack(int enemyNo, Vector3 spawnPosition, float speed)
     {
+
+        PhotonNetwork.Instantiate(Enemy[enemyNo].name, spawnPosition, Quaternion.identity, 0);
+/*
         GameObject enemy = Instantiate(Enemy[enemyNo]);
         enemy.transform.position = spawnPosition;
         enemy.GetComponent<Attack>().speed = speed;
+  */ 
     }
 }

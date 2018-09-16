@@ -66,7 +66,7 @@ public class NetManager : MonoBehaviour {
         foreach (GameObject swordLikeThing in this.swordLikeThings)
         {
             //initializationPosition = new Vector3(Random.Range(0, 1), 4, Random.Range(0, 1)); //picks a random spot on the floor near the player.
-            initializationPosition = new Vector3(-1 + i * 2, 1, 1);
+            initializationPosition = new Vector3(-0.2f + i * 0.47f, 0.96f, 1.28f);
             i++;
             PhotonNetwork.Instantiate(swordLikeThing.name, initializationPosition, initializationRotation   , 0);
         }

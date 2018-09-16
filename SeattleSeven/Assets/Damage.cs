@@ -11,6 +11,7 @@ public class Damage : MonoBehaviour {
         {
             Debug.Log("Decrease Health");
             weaponManager.damage();
+            PhotonNetwork.Destroy(obj.gameObject.GetPhotonView());
             Destroy(obj.gameObject);
         }
     }
